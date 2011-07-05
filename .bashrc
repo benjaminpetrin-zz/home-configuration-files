@@ -25,11 +25,8 @@ local grey='\[\033[0;37m\]'
 local white='\[\033[1;37m\]'
 local styleEnd='\[\033[0m\]'
 
-# Return value visualisation
-PROMPT_COMMAND='RET=$?; if [[ $RET -eq 0 ]]; then echo -ne "\033[0;32m$RET\033[0m"; else echo -ne "\033[0;31m$RET\033[0m"; fi; echo -n " "'
-
 # Prompt
-export PS1="$RET_SMILEY[$yellow\u$white@$blue\h $cyan\w$white]\$$styleEnd"
+export PS1="[$yellow\u$grey@$blue\h $cyan\w$grey]\$$styleEnd"
 
 } # end .bashrc
 .bashrc
