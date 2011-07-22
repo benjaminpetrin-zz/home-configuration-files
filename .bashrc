@@ -13,6 +13,9 @@ fi
 # allow local scoping
 function .bashrc() {
 
+#default to vi command editing mode instead of emacs
+set -o vi
+
 # Some color definitions
 local black='\[\033[8;30m\]'
 local red='\[\033[0;31m\]'
