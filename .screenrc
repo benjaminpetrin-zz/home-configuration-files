@@ -1,0 +1,8 @@
+# long history
+defscrollback 5000
+
+# no splash screen (on by default on mac)
+startup_message off
+
+# no barking
+vbell_msg ""
