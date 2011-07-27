@@ -6,3 +6,6 @@ startup_message off
 
 # no barking
 vbell_msg ""
+
+# Pretty status line
+hardstatus alwayslastline '%{= k} %= %{= kw}%?%-Lw%?%{r}(%{W}%n* %f%t%?(%u)%?%{r})%{w}%?%+Lw%?%? %= %D %M %d %c '
