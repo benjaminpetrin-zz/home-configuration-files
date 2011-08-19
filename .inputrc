@@ -1,0 +1,2 @@
+# no longer have to hit the <Tab> key twice to produce a list of all possible completions
+set show-all-if-ambiguous on
