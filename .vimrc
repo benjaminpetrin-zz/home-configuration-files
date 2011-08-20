@@ -5,6 +5,7 @@
 " setup unknown filetypes
 au BufNewFile,BufRead *.as setf actionscript
 au BufNewFile,BufRead *.js setf javascript
+au BufNewFile,BufRead *.tac setf python
 
 "open file with cursor in last place file was edited
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
