@@ -31,5 +31,8 @@ local styleEnd='\[\033[0m\]'
 # Prompt
 export PS1="[$yellow\u$grey@$blue\h $cyan\w$grey]\$$styleEnd"
 
+# don't store duplicate consecutive entries in bash history
+export HISTCONTROL=ignoreboth
+
 } # end .bashrc
 .bashrc
