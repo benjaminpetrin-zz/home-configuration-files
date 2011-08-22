@@ -33,6 +33,14 @@ syntax on
 :set tabstop=4
 
 """"""""""""""
+" Commands   "
+""""""""""""""
+
+" My common typos
+cnoreabbr W w
+cnoreabbr Wq wq
+
+""""""""""""""
 " SEARCHING  "
 """"""""""""""
 
