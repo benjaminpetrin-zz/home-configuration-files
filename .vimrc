@@ -39,6 +39,7 @@ syntax on
 " My common typos
 cnoreabbr W w
 cnoreabbr Wq wq
+cnoreabbr Q q
 
 """"""""""""""
 " SEARCHING  "

@@ -13,8 +13,9 @@ fi
 # allow local scoping
 function .bashrc() {
 
-#default to vi command editing mode instead of emacs
-set -o vi
+##############
+# VISUAL     #
+##############
 
 # Some color definitions
 local black='\[\033[8;30m\]'
@@ -30,6 +31,13 @@ local styleEnd='\[\033[0m\]'
 
 # Prompt
 export PS1="[$yellow\u$grey@$blue\h $cyan\w$grey]\$$styleEnd"
+
+##############
+# COMMANDS   #
+##############
+
+#default to vi command editing mode instead of emacs
+set -o vi
 
 # don't store duplicate consecutive entries in bash history
 export HISTCONTROL=ignoreboth
