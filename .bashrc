@@ -42,5 +42,10 @@ set -o vi
 # don't store duplicate consecutive entries in bash history
 export HISTCONTROL=ignoreboth
 
+# modify the CDPATH to include all directories in the home directory
+# in addition to the current directory
+export CDPATH=".:~"
+
+
 } # end .bashrc
 .bashrc
