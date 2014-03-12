@@ -14,6 +14,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " VISUAL     "
 """"""""""""""
 
+set t_Co=256
+colorscheme ir_black
+
 " get rid of beep when hitting : or scrolling all the way down on the mac
 :set visualbell
 
@@ -23,14 +26,17 @@ syntax on
 " highlight search results
 :set hlsearch
 
-" define ExtraWhitespace
+" highlight trailing whitespace
 :highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-" highlight the pattern with the highlight group defined above
-" the pattern will match trailing white space
 :match ExtraWhitespace /\s\+$/
 
 " tabs should be displayed 4 spaces wide
+" and expanded to spaces
 :set tabstop=4
+:set expandtab
+
+" show commands being typed
+:set showcmd
 
 """"""""""""""
 " Commands   "
