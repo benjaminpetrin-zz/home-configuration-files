@@ -47,6 +47,9 @@ cnoreabbr W w
 cnoreabbr Wq wq
 cnoreabbr Q q
 
+" Disable Ex mode, as I never use it
+:nnoremap Q <Nop>
+
 """"""""""""""
 " SEARCHING  "
 """"""""""""""
